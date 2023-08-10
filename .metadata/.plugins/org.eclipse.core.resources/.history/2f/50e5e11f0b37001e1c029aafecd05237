@@ -1,0 +1,18 @@
+package com.codingdojo.pyc.repositories;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.codingdojo.pyc.models.Category;
+
+public interface CategoryRepository extends CrudRepository<Category, Long>{
+		//GET ALL
+		List<Category> findAll();
+		//Encontrar aquellos que no contengan;
+		List<Category> findByProductsNotContains(Product product);	
+		//ENCONTRAR POR ID
+		Optional<Category> findById(Long id);
+
+}

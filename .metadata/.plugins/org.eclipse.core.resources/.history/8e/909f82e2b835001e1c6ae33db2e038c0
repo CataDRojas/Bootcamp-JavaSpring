@@ -1,0 +1,40 @@
+package com.codingdojo.lista.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.codingdojo.lista.models.Student;
+import com.codingdojo.lista.repositories.StudentRepository;
+
+@Service
+public class StudentService {
+		private final StudentRepository studentRepository;
+
+	public StudentService(StudentRepository studentRepository) {
+		this.studentRepository = studentRepository;
+	}
+	
+	public List<Student> findAll() {
+		return studentRepository.findAll();
+	}
+	
+	public List<Student> personasSinLicencia() {
+		return studentRepository.findByLicenseIsNull();
+	}
+	
+	public Student create(Student student) {
+		return studentRepository.save(student);
+	}
+	
+	public Student findUser(Long id) {
+		Optional<Student> optionalPerson = studentRepository.findById(id);
+		if(optionalPerson.isPresent()) {
+			return optionalPerson.get();
+		} else {
+			return null;
+		}
+	}
+
+}

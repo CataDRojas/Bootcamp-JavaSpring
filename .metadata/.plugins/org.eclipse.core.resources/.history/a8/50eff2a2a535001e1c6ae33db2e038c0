@@ -1,0 +1,48 @@
+package com.codingdojo.relationship.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.codingdojo.relationship.models.Person;
+import com.codingdojo.relationship.repositories.PersonRepository;
+
+@Service
+public class UserService {
+	//Agregando el tag al repositorio como una dependencia
+	private final PersonRepository personRepository;
+
+	public UserService(PersonRepository personRepository) {
+		this.personRepository = personRepository;
+	}
+	
+	public List<Person> findAll() {
+		return personRepository.findAll();
+	}
+	
+	public List<Person> obtenerPersonasSinLicencia() {
+		return personRepository.findByLicenseIsNull();
+	}
+	
+	public Person create(Person user) {
+		return personRepository.save(user);
+	}
+	
+	public Person findUser(Long id) {
+		Optional<Person> optionalUser = personRepository.findById(id);
+		if(optionalUser.isPresent()) {
+			return optionalUser.get();
+		} else {
+			return null;
+		}
+	}
+
+	public Person updateUser(Person user) {
+		return personRepository.save(user);
+	}
+	
+	public void deleteUser(Long id) {
+		personRepository.deleteById(id);
+	}
+}

@@ -1,0 +1,36 @@
+package com.codingdojo.pyc.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.codingdojo.pyc.services.CategoryProductService;
+import com.codingdojo.pyc.services.CategoryService;
+import com.codingdojo.pyc.services.ProductService;
+@Controller
+@RequestMapping("")
+public class ProductController {
+	private final ProductService productService;
+	
+	private final CategoryService categoryService;
+	private final CategoryProductService categoryProductService;
+	
+	
+	
+	public ProductController(ProductService productservice, CategoryService categoryService,
+			CategoryProductService categoryProductService) {
+		this.productservice = productservice;
+		this.categoryService = categoryService;
+		this.categoryProductService = categoryProductService;
+	}
+
+
+
+	@GetMapping("/")
+	public String index(Model model) {
+		model.addAttribute("studentInfo", studentService.allStudent());
+		model.addAttribute("contactInfo", contactService.allContact());
+		return "students.jsp";
+	}
+}

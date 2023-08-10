@@ -1,0 +1,43 @@
+package com.codingdojo.lista.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.codingdojo.lista.models.Contact;
+import com.codingdojo.lista.repositories.ContactRepository;
+
+@Service
+public class ContactService {
+		private final ContactRepository contactRepository;
+
+	public ContactService(ContactRepository contactRepository) {
+		this.contactRepository = contactRepository;
+	}
+	
+	public List<Contact> findAll() {
+		return contactRepository.findAll();
+	}
+	
+	public Contact saveContact(Contact contact) {
+		return contactRepository.save(contact);
+	}
+	
+	public Contact findLicense(Long id) {
+		Optional<Contact> optionalContact = contactRepository.findById(id);
+		if(optionalContact.isPresent()) {
+			return optionalContact.get();
+		} else {
+			return null;
+		}
+	}
+	
+	public Contact updateLicense(Contact contact) {
+		return contactRepository.save(contact);
+	}
+	
+	public void deleteLicense(Long id) {
+		contactRepository.deleteById(id);
+	}
+}

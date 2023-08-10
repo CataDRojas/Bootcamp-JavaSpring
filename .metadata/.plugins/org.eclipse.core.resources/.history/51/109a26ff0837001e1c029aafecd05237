@@ -1,0 +1,15 @@
+package com.codingdojo.pyc.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.codingdojo.pyc.services.ContactService;
+import com.codingdojo.pyc.services.StudentService;
+
+@Controller
+@RequestMapping("")
+public class HomeController {
+	
+}

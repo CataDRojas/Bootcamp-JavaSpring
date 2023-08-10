@@ -1,0 +1,14 @@
+package com.codingdojo.pyc.repositories;
+
+import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.codingdojo.pyc.models.Contact;
+
+@Repository
+public interface ContactRepository extends CrudRepository<Contact, Long>{
+
+	List<Contact> findAll();
+
+}

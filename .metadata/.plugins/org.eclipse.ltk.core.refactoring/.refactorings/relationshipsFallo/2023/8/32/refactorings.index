@@ -1,0 +1,4 @@
+1691185351393	Rename type 'RelationshipsRepository'
+1691191719290	Rename type 'RelationshipsService'
+1691192086385	Encapsulate field 'firstName'
+1691298798209	Rename resource 'newPerson'

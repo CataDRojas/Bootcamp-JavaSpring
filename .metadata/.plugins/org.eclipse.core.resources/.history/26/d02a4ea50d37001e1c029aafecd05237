@@ -1,0 +1,5 @@
+package com.codingdojo.pyc.controllers;
+
+public class CategoriesController {
+
+}

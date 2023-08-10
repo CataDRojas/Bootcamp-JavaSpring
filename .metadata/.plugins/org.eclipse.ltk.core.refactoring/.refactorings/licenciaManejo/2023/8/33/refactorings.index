@@ -1,0 +1,13 @@
+1691386726403	Rename package 'com.codingdojo.mvc'
+1691386754474	Rename type 'UserRepository'
+1691386772647	Rename type 'LicenseController'
+1691386790808	Rename type 'UserService'
+1691456840401	Rename package 'com.codingdojo.mvc'
+1691456914801	Rename type 'LicenseController'
+1691456927820	Rename type 'Controller'
+1691468213291	Rename type 'UserRepository'
+1691468248171	Rename type 'UserService'
+1691469340677	Copy file
+1691469361532	Copy files
+1691470509326	Move 3 resources to 'WEB-INF'
+1691470573436	Move 3 resources to 'views'

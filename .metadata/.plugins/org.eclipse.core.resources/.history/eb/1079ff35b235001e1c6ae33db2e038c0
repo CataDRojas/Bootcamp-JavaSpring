@@ -1,0 +1,13 @@
+package com.codingdojo.lista.repositories;
+
+import java.util.List;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.codingdojo.lista.models.Contact;
+
+@Repository
+public interface LicenseRepository extends CrudRepository<Contact, Long>{
+    //Este método recupera todas las preguntas de la base de datos
+    List<Contact> findAll();
+}

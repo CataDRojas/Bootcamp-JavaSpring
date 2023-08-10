@@ -1,0 +1,5 @@
+package com.codingdojo.pyc.repositories;
+
+public interface ProductRepository {
+
+}
