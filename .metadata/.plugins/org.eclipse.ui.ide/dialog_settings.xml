@@ -47,6 +47,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/ekaterina/Desktop/Coding-dojo-Blap/JAVASPRING/AdvancedQueries/EmpleadosGerentes"/>
+			<item value="/Users/ekaterina/Desktop/Coding-dojo-Blap/JAVASPRING/AdvancedQueries/QueryJoins"/>
+			<item value="/Users/ekaterina/Documents/Proyecto Spring/ninjagold"/>
 			<item value="/Users/ekaterina/Desktop/DojoOverflow"/>
 			<item value="/Users/ekaterina/Desktop/Coding-dojo-Blap/JAVASPRING/SpringFundamentals/juegoNinjaGold"/>
 			<item value="/Users/ekaterina/Downloads/ninjagold"/>
@@ -73,5 +76,8 @@
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
 		</list>
+	</section>
+	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
+		<item key="OUTSIDE_LOCATION" value="/Users/ekaterina/Documents/Proyecto Spring"/>
 	</section>
 </section>
