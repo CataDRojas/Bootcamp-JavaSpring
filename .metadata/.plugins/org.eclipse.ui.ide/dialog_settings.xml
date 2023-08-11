@@ -47,6 +47,12 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/ekaterina/Desktop/DojoOverflow"/>
+			<item value="/Users/ekaterina/Desktop/Coding-dojo-Blap/JAVASPRING/SpringFundamentals/juegoNinjaGold"/>
+			<item value="/Users/ekaterina/Downloads/ninjagold"/>
+			<item value="/Users/ekaterina/Downloads/DojosNinjas"/>
+			<item value="/Users/ekaterina/Desktop/Coding-dojo-Blap/JAVASPRING/SpringDataII/DojoOverflow"/>
+			<item value="/Users/ekaterina/Desktop/Coding-dojo-Blap/JAVASPRING/SpringDataII/ProductCategory"/>
 			<item value="/Users/ekaterina/Desktop/lista"/>
 			<item value="/Users/ekaterina/Desktop/listaestudiantes"/>
 			<item value="/Users/ekaterina/Documents/Proyecto Spring/relationships"/>

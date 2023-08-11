@@ -1,5 +1,0 @@
-package com.codingdojo.lookify.repositories;
-
-public interface LookifyRepository extend CrudRepository<lookify, Long> {
-
-}

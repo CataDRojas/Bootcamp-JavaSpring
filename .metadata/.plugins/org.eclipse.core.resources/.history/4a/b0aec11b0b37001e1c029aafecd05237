@@ -1,9 +1,0 @@
-package com.codingdojo.pyc.repositories;
-
-import org.springframework.data.repository.CrudRepository;
-
-import com.codingdojo.pyc.models.Category;
-
-public interface CategoryRepository extends CrudRepository<Category, Long>{
-
-}

@@ -44,10 +44,10 @@
         left: 295px;
       }
     </style>
+    
   </head>
   <body>
     <div class="container-principal">
-
     <div class="container">
       <table>
         <thead>
@@ -114,34 +114,6 @@
 
     </form:form>
     </div>
-
-    <!-- <div class="container new">
-      <form:form accept-charset="UTF-8" action="/lenguajes" method="post" modelAttribute="lenguaje">
-
-        <div class="mb-3 row">
-          <form:label path="name" for="name" class="col-sm-2 col-form-label">Name</form:label>
-          <div class="col-sm-4">
-            <form:input path="currentVersion"/>
-          </div>
-        </div>
-
-        <div class="mb-3 row">
-          <form:label path="creator" for="creator" class="col-sm-2 col-form-label">Creator</form:label>
-          <div class="col-sm-4">
-            <form:input path="currentVersion"/>
-          </div>
-        </div>
-
-        <div class="mb-3 row">
-          <form:label path="currentVersion" class="col-sm-2 col-form-label">Version</form:label>
-          <div class="col-sm-4">
-            <form:input path="currentVersion"/>
-          </div>
-        </div>
-
-        <input type="submit" value="Submit" />
-      </form:form>
-    </div> -->
 
 </div>
 

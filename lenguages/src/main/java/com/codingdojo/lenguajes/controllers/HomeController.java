@@ -62,7 +62,7 @@ public class HomeController {
             return "redirect:/lenguajes";
         }
     }
-    
+   
     @RequestMapping(value="/lenguajes/delete/{id}", method=RequestMethod.GET)
     public String destroy(@PathVariable("id") Long id) {
         lenguajeService.deleteLenguaje(id);

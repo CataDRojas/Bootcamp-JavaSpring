@@ -8,6 +8,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value="Lookify"/>
 		<list key="findhistory">
+			<item value="questions"/>
 			<item value="Song"/>
 		</list>
 		<list key="replacehistory">
